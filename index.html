@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categoriseer Activiteit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sleep de kaartjes naar de juiste categorie</h1>
+  <div class="categories">
+    <div class="category" id="cat1">
+      <img src="img/cat1.jpg" alt="Categorie 1">
+    </div>
+    <div class="category" id="cat2">
+      <img src="img/cat2.jpg" alt="Categorie 2">
+    </div>
+  </div>
+  <div class="cards">
+    <div class="card" draggable="true" data-category="cat1">
+      <img src="img/card1.jpg" alt="Kaartje 1">
+    </div>
+    <div class="card" draggable="true" data-category="cat1">
+      <img src="img/card2.jpg" alt="Kaartje 2">
+    </div>
+    <div class="card" draggable="true" data-category="cat2">
+      <img src="img/card3.jpg" alt="Kaartje 3">
+    </div>
+  </div>
+
+  <button id="submit-btn">Indienen</button>
+  <div id="feedback"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
